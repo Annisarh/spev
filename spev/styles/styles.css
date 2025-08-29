@@ -1,0 +1,42 @@
+
+/* font */
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(../fonts/Poppins-Light.woff);
+}
+
+/* style utama */
+.navbar-nav {
+    font: 18px/36px 'Poppins-Light', 'Arial Narrow', arial, sans-serif;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+    position: relative;
+    left: -225px;
+    top: 2px;
+}
+
+.navbar-logo span {
+    color: red;
+}
+
+/* bagian garis bawah navbar */
+.navbar .navbar-nav a:hover {
+    color: red;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid red;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
