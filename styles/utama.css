@@ -1,0 +1,160 @@
+/* bagian font */
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url(../fonts/Poppins-Medium.woff);
+}
+
+body {
+    font-family: 'Poppins-medium', Arial, Helvetica, sans-serif;
+}
+
+/* bagian banner */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* bagian navbar */
+.navbar .navbar-brand {
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    left: 68px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* bagian content */
+.container .content {
+    position: absolute;
+    top: 230px;
+    color: white;
+    width: 50%;
+}
+
+.container .content p {
+    text-align: justify;
+}
+
+/* bagian alurkerja */
+.container .alurkerja {
+    position: absolute;
+    width: 50%;
+    top: 150px;
+    color: white;
+}
+
+/* bagian card */
+.card {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: -250px;
+}
+
+/* bagian overlay */
+.aoverlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    transition: 0.8s;
+    padding: 100px 0;
+}
+
+.aoverlay:target {
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* bagian overlay login admin */
+.acontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.abox {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.aform-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.aform-box header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.aform-box form .afield {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.aform-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 0px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.abtn {
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.abtn:hover {
+    opacity: 0.82;
+}
+
+.submit {
+    width: 100%;
+}
+
+.link {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,144 @@
+/* bagian fontface */
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url(../fonts/Poppins-Medium.woff);
+}
+
+body {
+    font-family: 'Poppins-medium', Arial, Helvetica, sans-serif;
+}
+
+/* bagian navbar */
+.navbar {
+    border-radius: 10px;
+    margin: 12px 15px;
+}
+
+.navbar span {
+    font-size: 20px;
+}
+
+.navbar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* bagian container */
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* bagian content */
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    color: white;
+}
+
+.card {
+    position: absolute;
+    z-index: 2;
+}
+
+/* bagian overlay */
+.aoverlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    transition: 0.8s;
+    padding: 100px 0;
+}
+
+.aoverlay:target {
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* bagian overlay login */
+.acontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    margin-top: -60px;
+}
+
+.abox {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.aform-box {
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.aform-box header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.aform-box form .afield {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.aform-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 0px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.abtn {
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.abtn:hover {
+    opacity: 0.82;
+}
+
+.submit {
+    width: 100%;
+}
+
+.link {
+    margin-bottom: 15px;
+}
